@@ -1,0 +1,33 @@
+Hi Rashad,
+
+
+FTP info: 
+ftp.newcheng.com.tw
+account: newoil-rice
+passL Baby100%rice
+
+virtual machine background management platform:
+https://219.84.199.172:8443 
+account: newcheng.com.tw
+pass: newoil-rice888
+
+Database Info::::::::::::::::::;;
+:::::::::::::::::::::::::::::::::
+Database Name baby_rice
+
+Database user new123ch
+
+Database pass newoil8-8rice
+
+
+WOrdpress Info:::::::::;;;;;;
+=============================
+
+http://www.newcheng.com.tw/wp-admin/
+
+User: admin
+Pass: Rashad@512
+
+
+
+

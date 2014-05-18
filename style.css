@@ -1,0 +1,309 @@
+/*
+Theme Name:     New Cheng
+Theme URI:      N/A
+Description:    New Cheng Stylesheet
+Author:         Rashad
+Author URI:     http://itsrashad.info
+Template:       newcheng
+Version:        1.0
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    line-height: 30px;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    background: url("/wp-content/themes/newcheng/images/bg.jpg") scroll 0 0 rgba(0, 0, 0, 0);
+    color: #483844;
+    font: 12px/20px Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
+}
+#wrapper {
+    background: none repeat scroll 0 0 #F3F9FC;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+strong {
+    font-weight: bold;
+}
+
+/* #Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+    color: #32272f;
+    font-family: 'Philosopher', serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px;
+}
+h2 {
+    font-size: 30px;
+    padding: 10px;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+h5 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+h6 {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+p {
+    padding: 10px;
+}
+ul {
+    color: #000;
+    list-style-image: none;
+}
+li {
+    margin-bottom: 10px;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: #F4C08D;
+}
+
+.contact-list {
+    list-style-image: url("/wp-content/themes/newcheng/images/contact-list.jpg");
+    padding-left: 50px;
+}
+.logo {
+    float: left;
+    margin-right: 2px;
+}
+
+/* #Navigation CSS
+================================================== */
+
+
+.nav-bar {
+    margin-top: 35px;
+}
+
+.main-nav ul, .main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    color: #FFFFFF;
+    display: block;
+    line-height: 50px;
+    padding: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #F4C08D;
+}
+
+.main-nav ul ul a {
+    width: 200px;
+    line-height: 40px;
+    padding: 0 20px;
+    display: block;
+}
+
+.main-nav ul li {
+    position: relative;
+    float: left;
+}
+
+.main-nav ul ul {
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: -99999px;
+}
+
+.main-nav ul li:hover > ul {
+    top: 100%;
+    opacity: 1;
+    z-index: 3;
+}
+#show-nav {
+    display: none;
+}
+#close-nav {
+    display: none;
+    text-align: left;
+}
+.main-nav .current-menu-item a {
+    color: #F4C08D;
+}
+@media only screen and (max-width: 767px) {
+    .main-nav ul ul {
+        position: relative;
+        top: 0;
+    }
+    .main-nav ul li:hover > ul {
+        position: relative;
+    }
+    .main-nav ul ul a {
+        padding: 0 20px 0 40px;
+        width: auto;
+        line-height: 50px;
+    }
+    .main-nav ul li {
+        float: none;
+    }
+    .main-nav {
+        display: none;
+    }
+    #show-nav {
+        display: block;
+    }
+    img.size-medium {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer-navigation {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.footer-navigation li.active {height: 30px;}
+
+.footer-navigation li {
+    border-left: 1px solid #BEB3B4;
+    float: left;
+    height: 25px;
+    list-style-image: none;
+    padding: 0 5px;
+}
+
+.footer-navigation a {
+    color: #8B8888;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.footer-navigation li a > span {
+    text-indent: 0;
+    position: absolute;
+    bottom: 55px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 7px 14px;
+    left: 50%;
+    white-space: nowrap;
+}
+
+.footer-navigation li a > span:after {
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    margin-left: -5px;
+}
+.footer-navigation .current-menu-item a {
+    color: #F4C08D;
+}
+
+.content {
+    background: white;
+}
+.page-title {
+    border-bottom: 3px dashed #B0B9BF;
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.image-gallery a img {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+}
+.footer {
+    background: none repeat scroll 0 0 #1A2226;
+}
+.footer-text {
+    color: #FFFFFF;
+    float: left;
+}
+.button {
+    background: none repeat scroll 0 0 #185F81;
+    box-shadow: 0 1px 0 #000000;
+    color: #FFFFFF;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 17px;
+    padding: 8px 25px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.button:hover {
+    border-top-color: #9ad617;
+    background: #2C3E50;
+    color: #FFFFFF;
+}
+.button:active {
+    border-top-color: #136296;
+    background: #136296;
+}
+
